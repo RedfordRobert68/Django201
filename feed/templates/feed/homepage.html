@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}My Homepage{% endblock %}
+{% block body %}
+    {% for post in posts %}
+        {{ post.text }} published on {{ post.date }}
+        <hr>
+    {% endfor %}
+{% endblock %}
